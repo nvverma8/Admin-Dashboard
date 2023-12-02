@@ -1,38 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th {
+  background-color: #aba5a5;
+  font-size: 18px;
+}
+
+.fa-solid {
+  font-size: 16px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  color: #333;
+}
+
+.check,
+#check-box:hover {
+  cursor: pointer;
+}
+
+ul {
+  text-decoration: none;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 5px;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.search {
+  border-radius: 3px;
+  width: 180px;
+  height: 25px;
+  border: 1px solid black;
+}
+
+.delete,
+.edit,
+.save,
+.toggle__button,
+.pagination button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 30px;
+}
+
+.delete {
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.edit {
+  background-color: blue;
+  color: white;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save {
+  background-color: green;
+  color: white;
+  margin-right: 5px;
+}
+
+.toggle__button {
+  background-color: darkolivegreen;
+  color: white;
+  margin-right: 5px;
+}
+
+.footer {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: #352f44;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-mode table {
+  border-color: white;
+}
+
+.dark-mode th {
+  border-color: white;
+  color: #fff;
+}
+
+.dark-mode td {
+  border-color: white;
+  color: whitesmoke;
+  background-color: #5c5470;
+}
+
+.dark-mode th {
+  background-color: #333;
+}
+
+.dark-mode .fa-solid {
+  color: #999;
+}
+
+.dark-mode .fa-solid:hover {
+  color: #ccc;
+}
+
+.dark-mode .check,
+.dark-mode #check-box:hover {
+  color: #ccc;
+}
+
+.dark-mode ul {
+  text-decoration: none;
+  color: white;
+}
+
+/* Light Mode Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3498db;
+}
+
+.pagination .active {
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #3498db;
+}
+
+/* Dark Mode Pagination */
+.dark-mode .pagination button {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #666;
+}
+
+.dark-mode .pagination button:hover {
+  background-color: #444;
+}
+
+.dark-mode .pagination .active {
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #3498db;
 }
