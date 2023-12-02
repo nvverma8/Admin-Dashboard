@@ -1,3 +1,4 @@
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Admin-Dashboard
+This Admin dashboard consist of a fetched data through can external API in the form of table with multiple rows. Admin can perform various task on UI like editing and deleting of data through can id. It consist of other functionalities as well .
+>>>>>>> c72584c0e66df9ca7233ec2f69638d6b0c4cd83b
