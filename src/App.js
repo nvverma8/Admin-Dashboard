@@ -109,6 +109,7 @@ const App = () => {
   };
 
   // Fetches data from the API on component mount
+  // eslint-disable-next-line 
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -124,11 +125,11 @@ const App = () => {
         console.error("Error fetching data:", error);
       }
     };
-
+  
     // Call the fetchData function
     fetchData();
-    console.log(data);
   }, []); // Empty dependency array to execute only once on component mount
+  
 
   useEffect(() => {
     // Simulate loading delay (Replace this with your actual data fetching or loading logic)
